@@ -1,0 +1,130 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+h1 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"],
+textarea,
+input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #4cae4c;
+}
+
+/* Estilos para la lista de tareas */
+.task-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.task-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+.task-list li.completed {
+    background-color: #dff0d8;
+    text-decoration: line-through;
+}
+
+.task-controls {
+    display: flex;
+    gap: 10px;
+}
+
+.task-controls button {
+    background-color: #d9534f;
+    padding: 5px;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.task-controls button:hover {
+    background-color: #c9302c;
+}
+
+/* Botón de completar/editar con colores diferentes */
+.task-controls button:nth-child(1) {
+    background-color: #5bc0de;
+}
+
+.task-controls button:nth-child(1):hover {
+    background-color: #31b0d5;
+}
+
+.task-controls button:nth-child(2) {
+    background-color: #f0ad4e;
+}
+
+.task-controls button:nth-child(2):hover {
+    background-color: #ec971f;
+}
+
+/* Estilos de responsividad */
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+    }
+
+    button, input[type="text"], textarea, input[type="date"] {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+}
